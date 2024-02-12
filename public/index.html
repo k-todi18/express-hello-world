@@ -11,13 +11,13 @@
           alert('It works!');
         }
       });
-      const links = document.getElementsByTagName('a');
+      
+      let links = document.querySelectorAll('a');
       console.log(links);
-      links.forEach(link => {
-         console.log('in link');
-         link.addEventListener('click', event => {
-             console.log('here');
-         });
+      links.forEach(function (i) {
+          i.addEventListener('click', function() {
+                  console.log('here');
+          });
       });
       
     </script>
