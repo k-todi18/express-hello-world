@@ -17,8 +17,8 @@
       console.log(links);
       links.forEach(function (i) {
           i.addEventListener('click', function() {
-                  console.log('here', window.parent);
-                  window.parent.postMessage("message", "*");
+                  console.log('here', parent);
+                  parent.postMessage("message", "*");
           });
       });
     });      
