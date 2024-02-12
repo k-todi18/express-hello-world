@@ -14,6 +14,7 @@
       const links = document.getElementsByTagName('a');
       console.log(links);
       links.forEach(link => {
+         console.log('in link');
          link.addEventListener('click', event => {
              console.log('here');
          });
