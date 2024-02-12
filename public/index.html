@@ -11,7 +11,7 @@
           alert('It works!');
         }
       });
-      const links = document.querySelectorAll('a');
+      const links = document.getElementsByTagName('a');
       console.log(links);
       links.forEach(link => {
          link.addEventListener('click', event => {
