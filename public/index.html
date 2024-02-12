@@ -18,6 +18,7 @@
       links.forEach(function (i) {
           i.addEventListener('click', function() {
                   console.log('here');
+                  window.parent.postMessage("message", "*");
           });
       });
     });      
