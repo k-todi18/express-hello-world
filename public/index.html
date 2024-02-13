@@ -22,7 +22,7 @@
       links.forEach(function (i) {
           i.addEventListener('click', function() {
                   console.log('here');
-                  window.postMessage("message", "*");
+                  window.parent.postMessage("message", "*");
           });
       });
     });      
