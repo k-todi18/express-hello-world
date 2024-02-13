@@ -14,7 +14,8 @@
 
       document.addEventListener("DOMContentLoaded", function(event){
         if(window.location.href == 'https://lemon-sparrow-cape.cyclic.app/'){
-          console.log('works');    
+          console.log('works');
+          window.parent.postMessage("homepage","*");    
         }
       let links = document.querySelectorAll('a');
       console.log(links);
