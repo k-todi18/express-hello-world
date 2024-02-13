@@ -12,7 +12,10 @@
         }
       });
 
-      document.addEventListener("DOMContentLoaded", function(){
+      document.addEventListener("DOMContentLoaded", function(event){
+        if(window.location.href == 'https://lemon-sparrow-cape.cyclic.app'){
+          console.log('works');    
+        }
       let links = document.querySelectorAll('a');
       console.log(links);
       links.forEach(function (i) {
